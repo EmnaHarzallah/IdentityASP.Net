@@ -1,0 +1,6 @@
+@model List<PanierParUser>
+<h1>Mes Produits</h1>
+@foreach (var panier in Model)
+{
+    <h4>Produit: @panier.Produits.FirstOrDefault()?.Nom</h4>
+}

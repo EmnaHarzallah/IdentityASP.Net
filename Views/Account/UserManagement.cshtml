@@ -1,0 +1,15 @@
+@using Microsoft.AspNetCore.Identity
+@using WebApp1.Models
+@model IEnumerable<ApplicationUser>
+
+@{
+    ViewData["Title"] = "UserManagement";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>User Management</h1>
+
+@foreach (var item in Model)
+{
+    <h4>@item.Email - @item.City</h4>
+}
